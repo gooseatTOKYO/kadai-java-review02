@@ -8,10 +8,10 @@ public class Review01 {
         int result = tax(price, rate);
 
         //演算結果の表示
-        System.out.println(price + "円の商品の税込価格は"+ (rate + result) + "円（消費税は" + result + "円）です。");
+        System.out.println(price + "円の商品の税込価格は"+ (price + result) + "円（消費税は" + result + "円）です。");
     }
 
-    // int型変数1つ、double型1つを受け取り、乗算結果として消費税額を計算するtaxメソッド
+    // int型変数1つ、double型変数1つを受け取り、乗算結果として消費税額を計算するtaxメソッド
     public static int tax(int price,double rate) {
         rate = rate * 0.01;                         //百分率計算用
         double result= price * rate;                //消費税額の計算
